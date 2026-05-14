@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Material da Aula | Efeito Montagem Gradual</title>
+  <meta
+    name="description"
+    content="Guia prático do efeito de montagem gradual com explicação, storyboard, fluxo de ferramentas e prompts copiáveis para IA.">
+  <meta name="theme-color" content="#05070d">
+  <link rel="preload" as="image" href="./assets/images/Frame/frame000.webp">
+  <link rel="stylesheet" href="./assets/css/material-aula.css?v=20260514-audit">
+</head>
+<body class="lesson-body">
+  <div class="page-noise" aria-hidden="true"></div>
+
+  <main class="lesson-page" id="topo">
+    <header class="lesson-hero" aria-labelledby="lesson-title">
+      <img
+        class="lesson-hero-image"
+        src="./assets/images/Frame/frame000.webp"
+        width="720"
+        height="1280"
+        alt="Frame de referência do efeito de montagem gradual automotiva."
+        loading="eager"
+        decoding="async">
+      <div class="lesson-hero-shade" aria-hidden="true"></div>
+      <div class="lesson-hero-content">
+        <a class="lesson-back-link" href="./index.html">Voltar para a landing</a>
+        <p class="lesson-kicker">Material da Aula</p>
+        <h1 id="lesson-title">Efeito Montagem Gradual</h1>
+        <p>
+          Guia prático para criar uma animação em que as partes do carro surgem e se conectam aos poucos,
+          formando o veículo completo com apoio de IA.
+        </p>
+        <div class="lesson-hero-actions" aria-label="Ações rápidas">
+          <a class="lesson-btn lesson-btn-primary" href="#prompts-animacao">Ver prompts de animação</a>
+          <a class="lesson-btn lesson-btn-secondary" href="#fluxo-gemini">Ver fluxo no Gemini</a>
+        </div>
+      </div>
+    </header>
+
+    <nav class="lesson-nav" aria-label="Navegação do material">
+      <a href="#objetivo">Objetivo</a>
+      <a href="#ferramentas">Ferramentas</a>
+      <a href="#storyboard">Storyboard</a>
+      <a href="#fluxo-gemini">Gemini</a>
+      <a href="#prompts-animacao">Prompts</a>
+      <a href="#capcut">CapCut</a>
+      <a href="#modo-avancado">Modo avançado</a>
+      <a href="#videos-avancados">Vídeos avançados</a>
+    </nav>
+
+    <section class="lesson-section" id="objetivo" aria-labelledby="objetivo-title">
+      <div class="lesson-section-head">
+        <p class="lesson-section-label">01</p>
+        <h2 id="objetivo-title">Objetivo do Efeito</h2>
+        <p>
+          O efeito visual de montagem gradual mostra o carro sendo construído peça por peça. A ideia lembra
+          uma transformação mecânica: primeiro aparecem as rodas, depois o chassi, o motor, a estrutura e,
+          por fim, a lataria completa.
+        </p>
+      </div>
+
+      <div class="lesson-grid lesson-grid-5">
+        <article class="lesson-card">
+          <h3>Rodas primeiro</h3>
+          <p>A cena começa com as quatro rodas surgindo no local correto.</p>
+        </article>
+        <article class="lesson-card">
+          <h3>Chassi em seguida</h3>
+          <p>As peças metálicas entram e começam a formar a base do veículo.</p>
+        </article>
+        <article class="lesson-card">
+          <h3>Motor e estrutura</h3>
+          <p>Componentes internos aparecem e se encaixam de forma progressiva.</p>
+        </article>
+        <article class="lesson-card">
+          <h3>Lataria final</h3>
+          <p>A carroceria completa a montagem e fecha a transformação.</p>
+        </article>
+        <article class="lesson-card">
+          <h3>Resultado visual</h3>
+          <p>O vídeo ganha impacto de construção, tecnologia e transformação.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="lesson-section" id="ferramentas" aria-labelledby="ferramentas-title">
+      <div class="lesson-section-head">
+        <p class="lesson-section-label">02</p>
+        <h2 id="ferramentas-title">Ferramentas Usadas</h2>
+        <p>O material original organiza o processo em quatro ferramentas principais.</p>
+      </div>
+
+      <div class="lesson-grid lesson-grid-4">
+        <article class="lesson-card">
+          <p class="lesson-card-tag">Para gerar prompts</p>
+          <h3>ChatGPT</h3>
+          <p>Ajuda a criar prompts criativos e técnicos para orientar imagens, frames e animações.</p>
+        </article>
+        <article class="lesson-card">
+          <p class="lesson-card-tag">Para criar frames</p>
+          <h3>Gemini</h3>
+          <p>Altera imagens existentes e gera etapas visuais como fundo vazio, rodas, chassi, motor e lataria.</p>
+        </article>
+        <article class="lesson-card">
+          <p class="lesson-card-tag">Para animar</p>
+          <h3>Hailuo.ai</h3>
+          <p>Transforma os frames em vídeos curtos, criando transições fluidas entre cada etapa.</p>
+        </article>
+        <article class="lesson-card">
+          <p class="lesson-card-tag">Para finalizar</p>
+          <h3>CapCut</h3>
+          <p>Une os vídeos, ajusta duração, ritmo, transições, áudio e acabamento final.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="lesson-section" id="storyboard" aria-labelledby="storyboard-title">
+      <div class="lesson-section-head">
+        <p class="lesson-section-label">03</p>
+        <h2 id="storyboard-title">Método Storyboard</h2>
+        <p>
+          O storyboard é uma sequência de imagens que representa cada etapa da montagem. No material da aula,
+          cada imagem funciona como um marco visual, com intervalo de aproximadamente 6 segundos para dar ritmo
+          natural ao surgimento das peças.
+        </p>
+      </div>
+
+      <div class="lesson-timeline">
+        <article class="lesson-step">
+          <span>1</span>
+          <div>
+            <h3>Imagem das 4 rodas</h3>
+            <p>Apenas as rodas aparecem na cena.</p>
+          </div>
+        </article>
+        <article class="lesson-step">
+          <span>2</span>
+          <div>
+            <h3>Rodas + chassi</h3>
+            <p>O chassi começa a surgir e se conecta às rodas.</p>
+          </div>
+        </article>
+        <article class="lesson-step">
+          <span>3</span>
+          <div>
+            <h3>Motor + estrutura</h3>
+            <p>Motor e estrutura interna vão se formando.</p>
+          </div>
+        </article>
+        <article class="lesson-step">
+          <span>4</span>
+          <div>
+            <h3>Lataria completa</h3>
+            <p>A carroceria finaliza a montagem do veículo.</p>
+          </div>
+        </article>
+      </div>
+
+      <aside class="lesson-note">
+        <h3>Por que usar storyboard?</h3>
+        <p>
+          Ele dá mais controle sobre o resultado, evita surpresas na animação final e permite ajustar cada etapa
+          antes de transformar as imagens em vídeo.
+        </p>
+      </aside>
+    </section>
+
+    <section class="lesson-section" id="fluxo-gemini" aria-labelledby="gemini-title">
+      <div class="lesson-section-head">
+        <p class="lesson-section-label">04</p>
+        <h2 id="gemini-title">Montagem do Storyboard no Gemini</h2>
+        <p>Sequência de prompts para criar os frames base da montagem gradual.</p>
+      </div>
+
+      <div class="lesson-accordion-list">
+        <details class="lesson-details" open>
+          <summary>1. Preparando a conversa inicial com o ChatGPT</summary>
+          <p>O primeiro passo é fazer o ChatGPT entender que você vai criar prompts incrementais para o Gemini.</p>
+          <div class="prompt-box">
+            <div class="prompt-header">
+              <span>Prompt inicial</span>
+              <button class="copy-button" type="button">Copiar</button>
+            </div>
+            <pre class="prompt-code">Oi ChatGPT, eu estou criando uma série de imagens usando a ferramenta Nano Banana do Gemini, e para isso preciso de prompts detalhados para modificar as imagens passo a passo. O objetivo é gerar imagens em que vamos alterar partes específicas, começando com um carro e ajustando sua estrutura. Vamos trabalhar de forma incremental e preciso de sua ajuda para formular os prompts corretamente.</pre>
+          </div>
+        </details>
+
+        <details class="lesson-details">
+          <summary>2. Remover o carro e deixar apenas o fundo</summary>
+          <p>Cria a cena limpa, mantendo o ambiente original intacto.</p>
+          <div class="prompt-box">
+            <div class="prompt-header">
+              <span>Prompt para fundo vazio</span>
+              <button class="copy-button" type="button">Copiar</button>
+            </div>
+            <pre class="prompt-code">Remover completamente o carro da imagem, deixando apenas o fundo intacto. Certifique-se de que o fundo da imagem, incluindo qualquer detalhe de ambiente (como estrada, paisagem ou outros elementos visuais), permaneça exatamente como está, sem distorções ou alterações. O carro deve desaparecer completamente da cena, sem deixar vestígios, sombras ou qualquer outra marca que sugira sua presença.</pre>
+          </div>
+        </details>
+
+        <details class="lesson-details">
+          <summary>3. Manter os pneus e remover o carro</summary>
+          <p>Define a primeira etapa visível da montagem.</p>
+          <div class="prompt-box">
+            <div class="prompt-header">
+              <span>Prompt para pneus</span>
+              <button class="copy-button" type="button">Copiar</button>
+            </div>
+            <pre class="prompt-code">Remova completamente o carro da imagem, mas mantenha todos os quatro pneus visíveis na cena. Os pneus devem permanecer na mesma posição em que estavam, como se estivessem sozinhos na imagem. O restante do carro, incluindo a carroceria, chassi e outras partes, deve ser completamente removido. Certifique-se de que os pneus estejam posicionados corretamente no espaço, sem alterações nas suas proporções ou alinhamento.</pre>
+          </div>
+        </details>
+
+        <details class="lesson-details">
+          <summary>4. Remover a lataria e deixar apenas o chassi</summary>
+          <p>Gera a base estrutural para a próxima etapa.</p>
+          <div class="prompt-box">
+            <div class="prompt-header">
+              <span>Prompt para chassi</span>
+              <button class="copy-button" type="button">Copiar</button>
+            </div>
+            <pre class="prompt-code">Remova toda a lataria do carro (portas, capô, teto e demais partes da carroceria), deixando apenas o chassi inferior exposto e visível. O chassi inferior deve ser o único componente restante, com a parte de baixo do veículo visível, sem incluir o motor, a elétrica ou qualquer outra parte da estrutura interna do carro. A estrutura do carro, incluindo os suportes, suspensão e outros componentes internos, deve permanecer intacta. A lataria deve ser removida completamente, sem deixar rastros ou vestígios de qualquer parte da carroceria. Apenas a parte de baixo que sustenta o carro, ou seja, o chassi inferior, deve ser visível, sem outras partes do carro aparecendo na cena.</pre>
+          </div>
+        </details>
+
+        <details class="lesson-details">
+          <summary>5. Adicionar o motor ao chassi</summary>
+          <p>Inclui o motor na estrutura, respeitando proporção e perspectiva.</p>
+          <div class="prompt-box">
+            <div class="prompt-header">
+              <span>Prompt para motor</span>
+              <button class="copy-button" type="button">Copiar</button>
+            </div>
+            <pre class="prompt-code">Mantenha o chassi do carro, sem lataria, e adicione o motor na parte de trás do chassi, considerando que o carro é um modelo esportivo. O motor deve ser posicionado de forma precisa, na parte traseira do chassi, como em carros esportivos de motor traseiro. O motor deve ser detalhado, com todas as suas partes visíveis (como o bloco do motor, sistema de escape e outros componentes importantes), mantendo a proporção e perspectiva corretas em relação ao chassi. O motor deve ser ajustado para parecer que foi montado de forma realista, sem parecer deslocado ou fora de lugar.</pre>
+          </div>
+        </details>
+
+        <details class="lesson-details">
+          <summary>6. Adicionar a estrutura interna</summary>
+          <p>Completa os componentes estruturais antes da lataria final.</p>
+          <div class="prompt-box">
+            <div class="prompt-header">
+              <span>Prompt para estrutura</span>
+              <button class="copy-button" type="button">Copiar</button>
+            </div>
+            <pre class="prompt-code">Mantenha o chassi e o motor do carro, e adicione a estrutura do carro (como suportes, armações e outras partes da estrutura interna), mas sem a lataria. A estrutura do carro deve ser posicionada de forma precisa, com todos os componentes estruturais visíveis, como barras de reforço, suportes e outras peças metálicas que fazem parte da base do veículo. A lataria, incluindo portas, capô e outros elementos externos, não deve ser incluída. A estrutura deve parecer integrada ao chassi e ao motor, sem distorções nas proporções ou alinhamento.</pre>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="lesson-section" id="prompts-animacao" aria-labelledby="prompts-title">
+      <div class="lesson-section-head">
+        <p class="lesson-section-label">05</p>
+        <h2 id="prompts-title">Prompts para Animação</h2>
+        <p>Prompts em formato JSON para usar no Veo 3 ou Hailuo.ai e transformar os frames em vídeo.</p>
+      </div>
+
+      <div class="prompt-grid">
+        <article class="prompt-box">
+          <div class="prompt-title">
+            <span>Prompt 0</span>
+            <h3>Aparecendo o Pneu</h3>
+            <p>Animação em que as quatro rodas aparecem gradualmente na cena.</p>
+          </div>
+          <div class="prompt-header">
+            <span>JSON</span>
+            <button class="copy-button" type="button">Copiar</button>
+          </div>
+          <pre class="prompt-code">{
+  "animation": {
+    "start_frame": "image_with_empty_scene",
+    "end_frame": "image_with_wheels_in_place",
+    "animation_type": "gradual_appearance",
+    "camera": "static",
+    "description": "Animate the gradual appearance of all four wheels, coming from the same location in the scene, as if they were part of an invisible car. The wheels should roll into view from a central point, one by one, and stop in their correct positions, forming a complete set of wheels. The camera remains static throughout the entire animation, focusing on the wheels as they enter from the same direction and settle in place."
+  }
+}</pre>
+        </article>
+
+        <article class="prompt-box">
+          <div class="prompt-title">
+            <span>Prompt 1</span>
+            <h3>Chassi e Pneus</h3>
+            <p>Partes metálicas surgem gradualmente para formar o chassi.</p>
+          </div>
+          <div class="prompt-header">
+            <span>JSON</span>
+            <button class="copy-button" type="button">Copiar</button>
+          </div>
+          <pre class="prompt-code">{
+  "animation": {
+    "start_frame": "image_with_wheel_in_place",
+    "end_frame": "image_with_wheel_and_chassis",
+    "animation_type": "gradual_appearance",
+    "camera": "static",
+    "description": "Animate the gradual appearance of various metallic parts coming from inside the wheel, gradually assembling to form a car chassis. The camera remains static while the animation focuses on the gradual emergence and assembly of the chassis components."
+  }
+}</pre>
+        </article>
+
+        <article class="prompt-box">
+          <div class="prompt-title">
+            <span>Prompt 2</span>
+            <h3>Adicionando o Motor</h3>
+            <p>O motor aparece no ponto correto e o chassi se ajusta ao redor.</p>
+          </div>
+          <div class="prompt-header">
+            <span>JSON</span>
+            <button class="copy-button" type="button">Copiar</button>
+          </div>
+          <pre class="prompt-code">{
+  "animation": {
+    "start_frame": "image_with_wheel_and_chassis",
+    "end_frame": "image_with_motor_in_final_position",
+    "animation_type": "gradual_appearance",
+    "camera": "static",
+    "description": "Animate the gradual addition of the motor, ensuring it appears directly in the correct position within the chassis from the start. As the motor parts emerge, the chassis will adjust around it, flexing and reshaping to fit perfectly. The motor will assemble piece by piece, starting at its final position, with the camera remaining static to capture the movement of both the motor and the chassis as it adapts to ensure a proper fit."
+  }
+}</pre>
+        </article>
+
+        <article class="prompt-box">
+          <div class="prompt-title">
+            <span>Prompt 3</span>
+            <h3>Adicionando a Estrutura</h3>
+            <p>Componentes estruturais se encaixam com aparência tecnológica.</p>
+          </div>
+          <div class="prompt-header">
+            <span>JSON</span>
+            <button class="copy-button" type="button">Copiar</button>
+          </div>
+          <pre class="prompt-code">{
+  "animation": {
+    "start_frame": "image_with_motor_in_place",
+    "end_frame": "image_with_structure_in_place",
+    "animation_type": "gradual_appearance",
+    "camera": "static",
+    "description": "Animate the gradual assembly of the car's structural components. The structure appears piece by piece, with parts emerging, folding, and fitting into place, creating a technological and robotic appearance. The camera remains static while the structural components assemble."
+  }
+}</pre>
+        </article>
+
+        <article class="prompt-box">
+          <div class="prompt-title">
+            <span>Prompt 4</span>
+            <h3>Frame Final - Lataria Completa</h3>
+            <p>Transformação final, com painéis e carroceria completando o carro.</p>
+          </div>
+          <div class="prompt-header">
+            <span>JSON</span>
+            <button class="copy-button" type="button">Copiar</button>
+          </div>
+          <pre class="prompt-code">{
+  "animation": {
+    "start_frame": "image_with_structure_in_place",
+    "end_frame": "final_image_with_completed_car",
+    "animation_type": "gradual_appearance",
+    "camera": "static",
+    "description": "Animate the final transformation, where the car's body and all its components gradually assemble. The camera remains static while the robotic arms and mechanisms appear, placing the body panels and completing the car assembly."
+  }
+}</pre>
+        </article>
+      </div>
+    </section>
+
+    <section class="lesson-section" id="capcut" aria-labelledby="capcut-title">
+      <div class="lesson-section-head">
+        <p class="lesson-section-label">06</p>
+        <h2 id="capcut-title">Finalização no CapCut</h2>
+        <p>Depois de gerar os vídeos, o CapCut entra para organizar a sequência e dar acabamento.</p>
+      </div>
+
+      <div class="lesson-grid lesson-grid-3">
+        <article class="lesson-card">
+          <h3>Importar vídeos</h3>
+          <p>Leve todos os vídeos gerados para a linha do tempo.</p>
+        </article>
+        <article class="lesson-card">
+          <h3>Organizar sequência</h3>
+          <p>Comece por rodas e chassi, depois motor, estrutura e lataria.</p>
+        </article>
+        <article class="lesson-card">
+          <h3>Ajustar duração</h3>
+          <p>Use o ritmo planejado no storyboard, com cerca de 6 segundos por etapa.</p>
+        </article>
+        <article class="lesson-card">
+          <h3>Adicionar transições</h3>
+          <p>Use cortes e transições suaves para evitar mudanças bruscas.</p>
+        </article>
+        <article class="lesson-card">
+          <h3>Ajustes finais</h3>
+          <p>Corrija cor, brilho, contraste, filtros, trilha e efeitos sonoros.</p>
+        </article>
+        <article class="lesson-card">
+          <h3>Exportar</h3>
+          <p>Finalize em MP4 com boa qualidade para publicação ou entrega.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="lesson-section" id="modo-avancado" aria-labelledby="avancado-title">
+      <div class="lesson-section-head">
+        <p class="lesson-section-label">07</p>
+        <h2 id="avancado-title">Modo Avançado</h2>
+        <p>
+          No modo avançado, o material trabalha com profundidade para aproximar a câmera do veículo e destacar
+          detalhes específicos, como rodas, chassi, motor, faróis, portas e traseira.
+        </p>
+      </div>
+
+      <div class="lesson-accordion-list">
+        <details class="lesson-details">
+          <summary>Cena 1 - Local vazio</summary>
+          <div class="prompt-box">
+            <div class="prompt-header">
+              <span>Prompt</span>
+              <button class="copy-button" type="button">Copiar</button>
+            </div>
+            <pre class="prompt-code">Gere uma imagem desse cenário mostrando um novo ângulo, posicione a câmera de forma mais baixa e ampla, aumentando a visibilidade do horizonte.</pre>
+          </div>
+        </details>
+
+        <details class="lesson-details">
+          <summary>Cena 2 - Aparecendo o pneu</summary>
+          <div class="prompt-box">
+            <div class="prompt-header">
+              <span>Gerar as rodas</span>
+              <button class="copy-button" type="button">Copiar</button>
+            </div>
+            <pre class="prompt-code">Gere uma imagem com as quatro rodas nesse local vazio, posicione-as de maneira que lembre a disposição real de um carro, mantendo o padrão das rodas.</pre>
+          </div>
+          <div class="prompt-box">
+            <div class="prompt-header">
+              <span>Adicionar zoom in</span>
+              <button class="copy-button" type="button">Copiar</button>
+            </div>
+            <pre class="prompt-code">Adicione um Zoom in, aproximando mais das rodas no cenário.</pre>
+          </div>
+        </details>
+
+        <details class="lesson-details">
+          <summary>Cena 3 - Chassi e pneus</summary>
+          <div class="prompt-box">
+            <div class="prompt-header">
+              <span>Adicionar chassi</span>
+              <button class="copy-button" type="button">Copiar</button>
+            </div>
+            <pre class="prompt-code">Adicione o chassi entre as quatro rodas, mantendo a consistência visual da imagem. Posicione-o de maneira que encaixe perfeitamente.</pre>
+          </div>
+          <div class="prompt-box">
+            <div class="prompt-header">
+              <span>Adicionar zoom in</span>
+              <button class="copy-button" type="button">Copiar</button>
+            </div>
+            <pre class="prompt-code">Adicione um Zoom in, aproximando mais do chassi.</pre>
+          </div>
+        </details>
+
+        <details class="lesson-details">
+          <summary>Cena 4 - Adicionando o motor</summary>
+          <div class="prompt-box">
+            <div class="prompt-header">
+              <span>Prompt</span>
+              <button class="copy-button" type="button">Copiar</button>
+            </div>
+            <pre class="prompt-code">Gere uma imagem em Close-up mostrando o motor V8 biturbo de 4.0 litros que está dentro do chassi.</pre>
+          </div>
+        </details>
+
+        <details class="lesson-details">
+          <summary>Cena 5 - Adicionando a estrutura</summary>
+          <div class="prompt-box">
+            <div class="prompt-header">
+              <span>Prompt</span>
+              <button class="copy-button" type="button">Copiar</button>
+            </div>
+            <pre class="prompt-code">Gere uma imagem Close-up mostrando a parte inferior da estrutura do carro, com detalhes consistentes com a imagem de referência.</pre>
+          </div>
+        </details>
+
+        <details class="lesson-details">
+          <summary>Cena 6 - Lataria completa</summary>
+          <div class="prompt-box">
+            <div class="prompt-header">
+              <span>Prompt base</span>
+              <button class="copy-button" type="button">Copiar</button>
+            </div>
+            <pre class="prompt-code">Gere uma imagem em Close-up (da parte do carro).</pre>
+          </div>
+          <div class="prompt-box">
+            <div class="prompt-header">
+              <span>Exemplo 1</span>
+              <button class="copy-button" type="button">Copiar</button>
+            </div>
+            <pre class="prompt-code">Gere uma imagem mostrando um Close-up do farol.</pre>
+          </div>
+          <div class="prompt-box">
+            <div class="prompt-header">
+              <span>Exemplo 2</span>
+              <button class="copy-button" type="button">Copiar</button>
+            </div>
+            <pre class="prompt-code">Gere uma imagem mostrando um Close-up da porta.</pre>
+          </div>
+        </details>
+
+        <details class="lesson-details">
+          <summary>Cena 7 - Lataria completa traseira</summary>
+          <div class="prompt-box">
+            <div class="prompt-header">
+              <span>Prompt</span>
+              <button class="copy-button" type="button">Copiar</button>
+            </div>
+            <pre class="prompt-code">Gere uma imagem da McLaren 720S laranja no campo verde, focando na traseira, como mostrado na imagem de referência.</pre>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="lesson-section" id="videos-avancados" aria-labelledby="videos-title">
+      <div class="lesson-section-head">
+        <p class="lesson-section-label">08</p>
+        <h2 id="videos-title">Vídeos Avançados</h2>
+        <p>
+          Para o modo avançado, o material sugere reaproveitar a lógica dos prompts básicos, mas remover a linha
+          <code>"camera": "static"</code> e escolher o movimento de câmera diretamente nos parâmetros do Hailuo.
+        </p>
+      </div>
+
+      <div class="prompt-grid">
+        <article class="prompt-box">
+          <div class="prompt-title">
+            <span>Cena avançada 1</span>
+            <h3>Aparecendo o Pneu</h3>
+            <p>Mesmo conceito do modo básico, mas sem câmera fixa no JSON.</p>
+          </div>
+          <div class="prompt-header">
+            <span>JSON</span>
+            <button class="copy-button" type="button">Copiar</button>
+          </div>
+          <pre class="prompt-code">{
+  "animation": {
+    "start_frame": "image_with_empty_scene",
+    "end_frame": "image_with_wheels_in_place",
+    "animation_type": "gradual_appearance",
+    "description": "Animate the gradual appearance of all four wheels, emerging from the same general area in the scene as if they were part of an invisible car. The wheels should roll into view one by one and stop in their correct positions, forming a complete set of wheels. Keep the scene consistent with the reference frames; camera movement will be defined using Hailuo parameters."
+  }
+}</pre>
+        </article>
+
+        <article class="prompt-box">
+          <div class="prompt-title">
+            <span>Cena avançada 2</span>
+            <h3>Chassi e Pneus</h3>
+            <p>Peças metálicas surgem e montam o chassi com movimento de câmera externo.</p>
+          </div>
+          <div class="prompt-header">
+            <span>JSON</span>
+            <button class="copy-button" type="button">Copiar</button>
+          </div>
+          <pre class="prompt-code">{
+  "animation": {
+    "start_frame": "image_with_wheel_in_place",
+    "end_frame": "image_with_wheel_and_chassis",
+    "animation_type": "gradual_appearance",
+    "description": "Animate the gradual appearance of metallic components that emerge and assemble to form the car chassis, starting from the wheel setup and building the structure step by step. The parts should align naturally and connect realistically, maintaining visual consistency with the reference frames; camera movement will be defined using Hailuo parameters."
+  }
+}</pre>
+        </article>
+
+        <article class="prompt-box">
+          <div class="prompt-title">
+            <span>Prompt para ChatGPT</span>
+            <h3>Prompts universais</h3>
+            <p>Pergunta para gerar prompts universais de desmontagem gradual.</p>
+          </div>
+          <div class="prompt-header">
+            <span>Texto</span>
+            <button class="copy-button" type="button">Copiar</button>
+          </div>
+          <pre class="prompt-code">Preciso criar prompts em inglês para serem usados no Hailuo, uma IA geradora de vídeos. O prompt precisa ser universal, funcionando para todas as cenas que envolvem o efeito de montagem gradual das partes de um carro. Eu tenho imagens de referência em close-up de vários detalhes do carro, que serão mostrados ao longo do vídeo completo. Como o vídeo terá várias cenas com diferentes partes do carro, preciso de um prompt de animação de montagem gradual que seja universal, sem citar peças específicas. Além disso, o efeito precisa ser invertido: vou usar a imagem de referência como frame final, mas também vou utilizá-la como frame inicial. Portanto, em vez de montagem gradual, o efeito deve ser de desmontagem gradual (montagem reversa). As peças devem começar a se soltar, desencaixar e se retrair para dentro da estrutura do carro, revelando a parte interna. A lataria deve desaparecer completamente, com movimentos realistas de peças, efeitos de desconexão, encaixes se desfazendo, estrutura se compactando e todos os efeitos visuais relacionados a uma desmontagem mecânica realista. O resultado deve mostrar apenas a estrutura interna do carro, mantendo consistência total com a imagem de referência.</pre>
+        </article>
+
+        <article class="prompt-box">
+          <div class="prompt-title">
+            <span>Prompt universal</span>
+            <h3>Close-ups e desmontagem</h3>
+            <p>Prompt em inglês para reverse-assembly em cenas de detalhe.</p>
+          </div>
+          <div class="prompt-header">
+            <span>Texto</span>
+            <button class="copy-button" type="button">Copiar</button>
+          </div>
+          <pre class="prompt-code">"Create an animated sequence that begins with the fully assembled car as shown in the reference frame (close-up). Perform a gradual reverse-assembly disassembly: the visible exterior components should detach with realistic mechanical separation, slight unlocking movements, and smooth retraction inward toward the vehicle's internal frame. Each element should slide, fold, and compact naturally as if being pulled back into the structure. The bodywork must completely disappear, revealing the internal structural elements and core components underneath. Maintain consistent lighting, materials, reflections, and perspective with the reference image, without changing the car model or adding new elements. Emphasize clean, believable disconnection and retraction effects throughout the dismantling process."</pre>
+        </article>
+      </div>
+    </section>
+
+    <footer class="lesson-footer">
+      <p>Conteúdo adaptado de <code>legacy/Material da aula/client/src/lib/content.ts</code>.</p>
+      <a href="#topo">Voltar ao topo</a>
+    </footer>
+  </main>
+
+  <script src="./assets/js/material-aula.js?v=20260514-audit" defer></script>
+</body>
+</html>

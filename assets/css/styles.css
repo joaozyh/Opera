@@ -1331,6 +1331,7 @@ img {
 }
 
 .hero-cta {
+  gap: 12px;
   margin-top: clamp(16px, 2.4vw, 28px);
   width: min(54ch, 100%);
   margin-inline: auto;
@@ -1399,6 +1400,13 @@ img {
   color: #ffffff;
   background: linear-gradient(140deg, var(--brand), var(--brand-deep));
   box-shadow: var(--shadow-brand);
+}
+
+.btn-secondary {
+  color: #e9f6ff;
+  border: 1px solid rgba(78, 197, 255, 0.36);
+  background: rgba(78, 197, 255, 0.1);
+  box-shadow: 0 0 18px rgba(78, 197, 255, 0.12);
 }
 
 .lp-hero .btn-primary {

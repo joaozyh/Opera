@@ -1,0 +1,612 @@
+@font-face {
+  font-family: "Underwave";
+  src: url("../fonts/3ebfaf1c4dcf4f3b0255.3a56dbb96ab7.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Be Vietnam Pro";
+  src: url("../fonts/b21a8376d942833de6fc.91f7ad7162e8.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Be Vietnam Pro";
+  src: url("../fonts/067e5dad13c9184c2ba1.c0d25ced7cb5.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 82px;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.lesson-body {
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(160deg, #05070d 0%, #101522 42%, #171120 100%);
+  background-size: 72px 72px, 72px 72px, 100% 100%;
+  color: #f4f7fb;
+  font-family: "Be Vietnam Pro", Arial, sans-serif;
+  overflow-x: clip;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+}
+
+.page-noise {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.06) 0.75px, transparent 0.75px);
+  background-size: 3px 3px;
+  opacity: 0.08;
+}
+
+.lesson-page {
+  width: min(1180px, calc(100vw - 32px));
+  margin: 0 auto;
+  padding: 18px 0 58px;
+}
+
+.lesson-hero {
+  position: relative;
+  min-height: 620px;
+  overflow: hidden;
+  border: 1px solid rgba(78, 197, 255, 0.26);
+  border-radius: 8px;
+  background: #070912;
+  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.42);
+}
+
+.lesson-hero-image,
+.lesson-hero-shade {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.lesson-hero-image {
+  object-fit: cover;
+  object-position: 70% center;
+  opacity: 0.54;
+}
+
+.lesson-hero-shade {
+  background:
+    linear-gradient(90deg, rgba(5, 7, 13, 0.98) 0%, rgba(8, 11, 20, 0.92) 45%, rgba(8, 11, 20, 0.46) 100%),
+    linear-gradient(180deg, rgba(5, 7, 13, 0.08), rgba(5, 7, 13, 0.86));
+}
+
+.lesson-hero-content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  align-content: center;
+  min-width: 0;
+  min-height: 620px;
+  max-width: 760px;
+  padding: 42px;
+}
+
+.lesson-back-link,
+.lesson-nav a,
+.lesson-footer a {
+  color: #dff3ff;
+  text-decoration: none;
+}
+
+.lesson-back-link {
+  width: fit-content;
+  margin-bottom: 24px;
+  border-bottom: 1px solid rgba(78, 197, 255, 0.45);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.lesson-back-link:hover,
+.lesson-nav a:hover,
+.lesson-footer a:hover {
+  color: #ffffff;
+}
+
+.lesson-kicker,
+.lesson-section-label,
+.lesson-card-tag,
+.prompt-title span,
+.prompt-header span {
+  margin: 0;
+  color: #8ee7ff;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.lesson-hero h1 {
+  max-width: 10ch;
+  margin: 8px 0 18px;
+  color: #fff6fa;
+  font-family: "Underwave", "Be Vietnam Pro", sans-serif;
+  font-size: 4.4rem;
+  line-height: 0.98;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+  text-shadow: 0 0 24px rgba(250, 30, 78, 0.22);
+}
+
+.lesson-hero p:not(.lesson-kicker) {
+  max-width: 60ch;
+  margin: 0;
+  color: #d8deee;
+  font-size: 1.04rem;
+  line-height: 1.7;
+}
+
+.lesson-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.lesson-btn,
+.copy-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 12px 18px;
+  font: 700 0.82rem/1 "Be Vietnam Pro", sans-serif;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 150ms ease, border-color 150ms ease, background 150ms ease, color 150ms ease;
+}
+
+.lesson-btn:hover,
+.copy-button:hover {
+  transform: translateY(-1px);
+}
+
+.lesson-btn:focus-visible,
+.copy-button:focus-visible,
+.lesson-nav a:focus-visible,
+.lesson-back-link:focus-visible,
+.lesson-footer a:focus-visible {
+  outline: 3px solid rgba(78, 197, 255, 0.35);
+  outline-offset: 3px;
+}
+
+.lesson-btn-primary {
+  color: #ffffff;
+  background: linear-gradient(140deg, #fa1e4e, #b40f36);
+  box-shadow: 0 0 24px rgba(250, 30, 78, 0.28);
+}
+
+.lesson-btn-secondary {
+  color: #e8f8ff;
+  border-color: rgba(78, 197, 255, 0.42);
+  background: rgba(78, 197, 255, 0.1);
+}
+
+.lesson-nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  min-width: 0;
+  gap: 8px;
+  margin: 18px 0;
+  padding: 10px;
+  overflow-x: auto;
+  border: 1px solid rgba(78, 197, 255, 0.18);
+  border-radius: 8px;
+  background: rgba(6, 8, 16, 0.92);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.24);
+}
+
+.lesson-nav a {
+  flex: 0 0 auto;
+  min-height: 38px;
+  padding: 11px 13px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  color: #c7d3e8;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.lesson-nav a:hover {
+  border-color: rgba(78, 197, 255, 0.36);
+  background: rgba(78, 197, 255, 0.09);
+}
+
+.lesson-section {
+  scroll-margin-top: 82px;
+  min-width: 0;
+  margin-top: 22px;
+  padding: 34px;
+  border: 1px solid rgba(78, 197, 255, 0.18);
+  border-radius: 8px;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(155deg, rgba(16, 20, 35, 0.96), rgba(9, 11, 21, 0.92));
+  background-size: 54px 54px, 54px 54px, 100% 100%;
+  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.24);
+}
+
+.lesson-section-head {
+  display: grid;
+  min-width: 0;
+  gap: 10px;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(78, 197, 255, 0.18);
+}
+
+.lesson-section-head h2 {
+  margin: 0;
+  color: #fff4f8;
+  font-family: "Underwave", "Be Vietnam Pro", sans-serif;
+  font-size: 2.55rem;
+  line-height: 1.05;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.lesson-section-head p:not(.lesson-section-label),
+.lesson-card p,
+.lesson-step p,
+.lesson-note p,
+.lesson-details p,
+.prompt-title p,
+.lesson-footer p {
+  margin: 0;
+  color: #c7d0e4;
+  line-height: 1.64;
+}
+
+.lesson-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.lesson-grid-5,
+.lesson-grid-4,
+.lesson-grid-3 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.lesson-card,
+.lesson-step,
+.lesson-note,
+.lesson-details,
+.prompt-box {
+  min-width: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background: rgba(9, 13, 24, 0.72);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+.lesson-card {
+  display: grid;
+  gap: 10px;
+  min-height: 150px;
+  padding: 20px;
+}
+
+.lesson-card h3,
+.lesson-step h3,
+.lesson-note h3,
+.prompt-title h3 {
+  margin: 0;
+  color: #ffe4eb;
+  font-size: 1rem;
+  line-height: 1.32;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.lesson-card-tag {
+  color: #9cff6a;
+}
+
+.lesson-timeline,
+.lesson-accordion-list,
+.prompt-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.lesson-timeline {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.lesson-step {
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+}
+
+.lesson-step span {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  color: #06111a;
+  background: #8ee7ff;
+  font-weight: 800;
+}
+
+.lesson-note {
+  margin-top: 16px;
+  padding: 20px;
+  border-color: rgba(156, 255, 106, 0.24);
+  background: rgba(16, 31, 25, 0.72);
+}
+
+.lesson-note h3 {
+  margin-bottom: 8px;
+}
+
+.lesson-details {
+  overflow: hidden;
+}
+
+.lesson-details summary {
+  min-height: 58px;
+  padding: 18px 20px;
+  color: #f5f7ff;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+
+.lesson-details summary:focus-visible {
+  outline: 3px solid rgba(78, 197, 255, 0.35);
+  outline-offset: -3px;
+}
+
+.lesson-details summary::marker {
+  color: #8ee7ff;
+}
+
+.lesson-details > p {
+  padding: 0 20px 16px;
+}
+
+.lesson-details .prompt-box {
+  margin: 0 20px 20px;
+}
+
+.prompt-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.prompt-box {
+  overflow: hidden;
+}
+
+.prompt-title {
+  display: grid;
+  gap: 8px;
+  padding: 18px 18px 0;
+}
+
+.prompt-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.copy-button {
+  min-height: 36px;
+  padding: 9px 12px;
+  color: #06111a;
+  background: #8ee7ff;
+}
+
+.copy-button.is-copied {
+  background: #9cff6a;
+}
+
+.copy-button.is-error {
+  color: #ffffff;
+  background: #b40f36;
+}
+
+.prompt-code {
+  max-height: 420px;
+  margin: 0;
+  padding: 18px;
+  overflow: auto;
+  color: #edf7ff;
+  background: rgba(2, 5, 12, 0.78);
+  font: 0.84rem/1.62 "Consolas", "Courier New", monospace;
+  tab-size: 2;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.lesson-section code {
+  color: #ffffff;
+  font-family: "Consolas", "Courier New", monospace;
+}
+
+.lesson-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 24px;
+  padding: 18px 2px;
+  color: #aeb8ce;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 980px) {
+  .lesson-grid-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .lesson-grid-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lesson-grid-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 920px) {
+.lesson-page {
+    width: min(calc(100vw - 20px), 720px);
+  }
+
+  .lesson-hero,
+  .lesson-hero-content {
+    min-height: 540px;
+  }
+
+  .lesson-hero-content {
+    padding: 28px;
+  }
+
+  .lesson-hero h1 {
+    font-size: 3.15rem;
+  }
+
+  .lesson-timeline,
+  .prompt-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+.lesson-page {
+    width: calc(100vw - 14px);
+    padding-top: 8px;
+  }
+
+  .lesson-hero,
+  .lesson-hero-content {
+    min-height: 500px;
+  }
+
+  .lesson-hero-image {
+    object-position: center;
+    opacity: 0.34;
+  }
+
+  .lesson-hero-shade {
+    background: linear-gradient(180deg, rgba(5, 7, 13, 0.94), rgba(5, 7, 13, 0.88));
+  }
+
+  .lesson-hero-content,
+  .lesson-section {
+    padding: 20px;
+  }
+
+  .lesson-hero h1 {
+    font-size: 2.45rem;
+  }
+
+  .lesson-hero p:not(.lesson-kicker) {
+    font-size: 0.96rem;
+  }
+
+  .lesson-hero-actions,
+  .lesson-btn {
+    width: 100%;
+  }
+
+.lesson-section-head h2 {
+    font-size: clamp(1.52rem, 7.5vw, 2rem);
+    line-height: 1.12;
+  }
+
+  .lesson-grid-5,
+  .lesson-grid-4,
+  .lesson-grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .lesson-card {
+    min-height: 0;
+  }
+
+  .lesson-details summary {
+    padding: 16px;
+  }
+
+  .lesson-details > p {
+    padding: 0 16px 14px;
+  }
+
+  .lesson-details .prompt-box {
+    margin: 0 16px 16px;
+  }
+
+  .prompt-header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .copy-button {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
