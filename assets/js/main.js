@@ -189,6 +189,29 @@
       let hasStarted = false;
       const orbitHoldDuration = 1.9;
       const orbitMoveDuration = 0.82;
+      const orbitMedia = window.matchMedia("(min-width: 760px) and (hover: hover) and (pointer: fine)");
+
+      const clearOrbitLayout = () => {
+        if (orbitTimeline) {
+          orbitTimeline.kill();
+          orbitTimeline = null;
+        }
+
+        grid.classList.remove("is-orbit-ready");
+        grid.style.height = "";
+        cards.forEach((card) => {
+          card.classList.remove("is-orbit-item");
+          card.style.width = "";
+          card.style.height = "";
+          gsapLib.set(card, { clearProps: "x,y" });
+        });
+      };
+
+      if (!orbitMedia.matches) {
+        clearOrbitLayout();
+        ROOT.dataset.lpGsapPromiseOrbit = "disabled-mobile";
+        return noopControl;
+      }
 
       const buildLayout = () => {
         grid.classList.add("is-orbit-ready");
@@ -268,6 +291,12 @@
 
       return {
         play: () => {
+          if (!orbitMedia.matches) {
+            clearOrbitLayout();
+            ROOT.dataset.lpGsapPromiseOrbit = "disabled-mobile";
+            return;
+          }
+
           if (orbitTimeline) {
             hasStarted = true;
             orbitTimeline.play();
@@ -281,6 +310,12 @@
           }
         },
         relayout: () => {
+          if (!orbitMedia.matches) {
+            clearOrbitLayout();
+            ROOT.dataset.lpGsapPromiseOrbit = "disabled-mobile";
+            return;
+          }
+
           rebuildTimeline();
         }
       };

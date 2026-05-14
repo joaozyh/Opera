@@ -563,7 +563,7 @@ button {
     width: 100%;
   }
 
-.lesson-section-head h2 {
+  .lesson-section-head h2 {
     font-size: clamp(1.52rem, 7.5vw, 2rem);
     line-height: 1.12;
   }
@@ -611,5 +611,271 @@ button {
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
+  }
+}
+
+/* Mobile lesson polish. */
+.lesson-page,
+.lesson-hero,
+.lesson-hero-content,
+.lesson-section,
+.lesson-nav,
+.lesson-grid,
+.lesson-timeline,
+.prompt-grid,
+.lesson-card,
+.lesson-details,
+.prompt-box {
+  min-width: 0;
+}
+
+@media (max-width: 680px) {
+  html {
+    scroll-padding-top: 76px;
+  }
+
+  .lesson-body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .lesson-page {
+    width: calc(100vw - 14px);
+    max-width: none;
+    padding: 8px 0 44px;
+  }
+
+  .lesson-hero,
+  .lesson-hero-content {
+    min-height: 460px;
+  }
+
+  .lesson-hero {
+    border-radius: 10px;
+  }
+
+  .lesson-hero-content {
+    align-content: end;
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .lesson-back-link {
+    margin-bottom: 18px;
+    font-size: 0.82rem;
+  }
+
+  .lesson-kicker,
+  .lesson-section-label,
+  .lesson-card-tag,
+  .prompt-title span,
+  .prompt-header span {
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+  }
+
+  .lesson-hero h1 {
+    max-width: 100%;
+    font-size: clamp(2.08rem, 10.7vw, 2.85rem);
+    line-height: 1;
+  }
+
+  .lesson-hero p:not(.lesson-kicker) {
+    max-width: 100%;
+    font-size: 0.94rem;
+    line-height: 1.58;
+    overflow-wrap: anywhere;
+  }
+
+  .lesson-hero-actions {
+    display: grid;
+    gap: 10px;
+    margin-top: 22px;
+  }
+
+  .lesson-btn {
+    min-height: 48px;
+    padding: 12px 14px;
+    white-space: normal;
+    line-height: 1.16;
+  }
+
+  .lesson-nav {
+    gap: 7px;
+    margin: 12px 0 16px;
+    padding: 8px;
+    border-radius: 10px;
+    scrollbar-width: none;
+  }
+
+  .lesson-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .lesson-nav a {
+    min-height: 36px;
+    padding: 10px 11px;
+    font-size: 0.72rem;
+    white-space: nowrap;
+  }
+
+  .lesson-section {
+    scroll-margin-top: 76px;
+    margin-top: 16px;
+    padding: 18px 14px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .lesson-section-head {
+    gap: 8px;
+    margin-bottom: 18px;
+    padding-bottom: 16px;
+  }
+
+  .lesson-section-head h2 {
+    max-width: 100%;
+    font-size: clamp(1.65rem, 8.4vw, 2.22rem);
+    line-height: 1.08;
+    overflow-wrap: anywhere;
+  }
+
+  .lesson-section-head p:not(.lesson-section-label),
+  .lesson-card p,
+  .lesson-step p,
+  .lesson-note p,
+  .lesson-details p,
+  .prompt-title p,
+  .lesson-footer p {
+    font-size: 0.92rem;
+    line-height: 1.58;
+    overflow-wrap: anywhere;
+  }
+
+  .lesson-grid,
+  .lesson-grid-5,
+  .lesson-grid-4,
+  .lesson-grid-3,
+  .lesson-timeline,
+  .prompt-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .lesson-card,
+  .lesson-step,
+  .lesson-note {
+    min-height: 0;
+    padding: 16px;
+    border-radius: 10px;
+  }
+
+  .lesson-card h3,
+  .lesson-step h3,
+  .lesson-note h3,
+  .prompt-title h3 {
+    font-size: 0.96rem;
+    line-height: 1.3;
+  }
+
+  .lesson-details {
+    border-radius: 10px;
+  }
+
+  .lesson-details summary {
+    min-height: 54px;
+    padding: 15px 14px;
+    line-height: 1.35;
+  }
+
+  .lesson-details > p {
+    padding: 0 14px 14px;
+  }
+
+  .lesson-details .prompt-box {
+    margin: 0 12px 14px;
+  }
+
+  .prompt-title {
+    padding: 14px 14px 0;
+  }
+
+  .prompt-header {
+    gap: 10px;
+    padding: 12px 14px;
+  }
+
+  .copy-button {
+    min-height: 44px;
+    white-space: normal;
+    line-height: 1.16;
+  }
+
+  .prompt-code {
+    max-height: 280px;
+    padding: 14px;
+    font-size: 0.78rem;
+    line-height: 1.56;
+  }
+
+  .lesson-footer {
+    display: grid;
+    gap: 8px;
+    margin-top: 18px;
+    padding: 16px 2px;
+    font-size: 0.84rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .lesson-page {
+    width: calc(100vw - 10px);
+  }
+
+  .lesson-hero-content {
+    padding: 18px 16px;
+  }
+
+  .lesson-section {
+    padding: 16px 12px;
+  }
+
+  .lesson-hero h1 {
+    font-size: clamp(1.95rem, 10.4vw, 2.55rem);
+  }
+
+  .lesson-section-head h2 {
+    font-size: clamp(1.48rem, 8vw, 2rem);
+  }
+}
+
+/* Final mobile legibility pass. */
+@media (max-width: 680px) {
+  .lesson-nav {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    overflow-x: visible;
+  }
+
+  .lesson-nav a {
+    flex: 1 1 calc(50% - 7px);
+    min-width: min(100%, 132px);
+    white-space: normal;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.18;
+  }
+
+  .lesson-kicker,
+  .lesson-section-label,
+  .lesson-card-tag,
+  .prompt-title span,
+  .prompt-header span {
+    font-size: 12px;
+    line-height: 1.25;
+  }
+
+  .prompt-code {
+    font-size: 13px;
   }
 }

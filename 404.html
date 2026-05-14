@@ -5,13 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
   <title>Pagina nao encontrada | Videoaulas com IA</title>
+  <meta name="theme-color" content="#06070d">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      min-height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      color: #f2f3fb;
+      background:
+        radial-gradient(circle at 12% 0%, rgba(250, 30, 78, 0.24), transparent 32%),
+        radial-gradient(circle at 92% 10%, rgba(78, 197, 255, 0.2), transparent 30%),
+        linear-gradient(160deg, #06070d, #101522 52%, #171120);
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+    }
+
+    main {
+      width: min(100%, 520px);
+      border: 1px solid rgba(78, 197, 255, 0.24);
+      border-radius: 10px;
+      padding: clamp(20px, 6vw, 34px);
+      background: rgba(9, 13, 24, 0.76);
+    }
+
+    p {
+      margin: 0;
+      line-height: 1.55;
+    }
+
+    p + p {
+      margin-top: 14px;
+    }
+
+    a {
+      color: #dff3ff;
+      font-weight: 700;
+    }
+  </style>
   <meta http-equiv="refresh" content="0; url=./index.html">
   <script>
     window.location.replace("./index.html" + window.location.search + window.location.hash);
   </script>
 </head>
 <body>
-  <p>Redirecionando para a pagina inicial...</p>
-  <p><a href="./index.html">Abrir pagina inicial</a></p>
+  <main>
+    <p>Redirecionando para a pagina inicial...</p>
+    <p><a href="./index.html">Abrir pagina inicial</a></p>
+  </main>
 </body>
 </html>
