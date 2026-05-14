@@ -69,7 +69,8 @@ button {
 }
 
 .lesson-page {
-  width: min(1180px, calc(100vw - 32px));
+  width: calc(100vw - 32px);
+  max-width: 1180px;
   margin: 0 auto;
   padding: 18px 0 58px;
 }
@@ -499,8 +500,9 @@ button {
 }
 
 @media (max-width: 920px) {
-.lesson-page {
-    width: min(calc(100vw - 20px), 720px);
+  .lesson-page {
+    width: calc(100vw - 20px);
+    max-width: 720px;
   }
 
   .lesson-hero,
@@ -523,8 +525,9 @@ button {
 }
 
 @media (max-width: 680px) {
-.lesson-page {
+  .lesson-page {
     width: calc(100vw - 14px);
+    max-width: none;
     padding-top: 8px;
   }
 
