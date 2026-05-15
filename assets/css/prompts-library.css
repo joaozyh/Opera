@@ -41,6 +41,47 @@
   line-height: 1.6;
 }
 
+.prompt-library-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 2px;
+}
+
+.prompt-library-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  border: 1px solid rgba(156, 255, 106, 0.76);
+  border-radius: 12px;
+  padding: 10px 14px;
+  color: #071325;
+  background: linear-gradient(135deg, rgba(156, 255, 106, 0.94), rgba(78, 197, 255, 0.94));
+  font: 700 12px/1 "Be Vietnam Pro", sans-serif;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: transform 140ms ease, filter 140ms ease, box-shadow 140ms ease;
+}
+
+.prompt-library-link:hover,
+.prompt-library-link:focus-visible {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+.prompt-library-link:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(78, 197, 255, 0.22);
+}
+
+.prompt-library-link-secondary {
+  color: #e8f8ff;
+  border-color: rgba(78, 197, 255, 0.42);
+  background: rgba(78, 197, 255, 0.1);
+}
+
 .prompt-library-toolbar {
   display: grid;
   gap: 14px;
@@ -390,6 +431,19 @@
   .prompt-library-toolbar {
     gap: 12px;
     margin-top: 4px;
+  }
+
+  .prompt-library-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .prompt-library-link {
+    width: 100%;
+    min-height: 44px;
+    text-align: center;
+    white-space: normal;
+    line-height: 1.16;
   }
 
   .prompt-search-label {
